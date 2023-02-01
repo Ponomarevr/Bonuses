@@ -1,23 +1,22 @@
 public class Main {
     public static void main(String[] args) {
 
-        int popolneno = 1001 ;
-        int bonusovNachisleno ;
-        int tekushSchet = 500 ;
-        int bonusovVsego = 10;
+        int moneyAdd = 1001;
+        int bonusesAdd;
+        int presentAccount = 500;
+        int totalBonuses = 10;
+        int finalAccount = presentAccount + moneyAdd;
 
-        if (popolneno > 1000) {
-            bonusovNachisleno = popolneno / 100;
-        } else {bonusovNachisleno = 0; }
-
-        //popolneno > 1000 ? bonusovNachisleno = popolneno / 100 : bonusovNachisleno = 0 ;
-
-        int itogSchet = tekushSchet + popolneno ;
-        bonusovVsego = bonusovVsego + bonusovNachisleno ;
-
-        System.out.println( "Рублей на вашем счету - " + itogSchet + " ; Бонусов - " + bonusovVsego + "." ) ;
+        if (moneyAdd > 1000) {
+            bonusesAdd = moneyAdd / 100;
+        } else {
+            bonusesAdd = 0;
+        }
 
 
+        totalBonuses = totalBonuses + bonusesAdd;
+
+        System.out.println("Рублей на вашем счету - " + finalAccount + " ; Бонусов - " + totalBonuses + ".");
 
 
     }
